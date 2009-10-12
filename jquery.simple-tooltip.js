@@ -17,6 +17,7 @@ Originally extracted from the easy to use CMS Venio at http://venio.se.
         if(titleDisplayed.length>0){
   	  	  $("body").append("<p id='v-tooltip'>"+titleDisplayed+"</p>");
   	  	  $("#v-tooltip")
+  	  	    .animate({opacity: 1.0}, opts.delay)
   	  	  	.css("top",(e.pageY - opts.xOffset) + "px")
   	  	  	.css("left",(e.pageX + opts.yOffset) + "px")
   	  	  	.fadeIn("fast");
@@ -37,6 +38,7 @@ Originally extracted from the easy to use CMS Venio at http://venio.se.
     title: null, 
     xOffset: 10,
     yOffset: 20, 
+    delay: 400,
     overrideElementTitle: false
   }
 })(jQuery);
