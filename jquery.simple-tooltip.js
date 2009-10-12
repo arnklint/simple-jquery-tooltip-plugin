@@ -9,14 +9,20 @@ Originally extracted from the easy to use CMS Venio at http://venio.se.
 	  
 	  return this.each(function(){
 	    var me = $(this);
+	    var originalTitle = "";
       me.hover(function(e){	
-        var title = me.attr('title') && !opts.overrideElementTitle ? me.attr('title') : opts.title;
-  	  	$("body").append("<p id='v-tooltip'>"+title+"</p>");
-  	  	$("#v-tooltip")
-  	  		.css("top",(e.pageY - opts.xOffset) + "px")
-  	  		.css("left",(e.pageX + opts.yOffset) + "px")
-  	  		.fadeIn("fast");		
+        originalTitle = me.attr('title');
+        titleDisplayed = originalTitle && !opts.overrideElementTitle ? originalTitle : opts.title;
+        me.attr("title","");
+        if(titleDisplayed.length>0){
+  	  	  $("body").append("<p id='v-tooltip'>"+titleDisplayed+"</p>");
+  	  	  $("#v-tooltip")
+  	  	  	.css("top",(e.pageY - opts.xOffset) + "px")
+  	  	  	.css("left",(e.pageX + opts.yOffset) + "px")
+  	  	  	.fadeIn("fast");
+  	  	}	
       },function(){
+        me.attr("title", originalTitle);
   	    $("#v-tooltip").remove();
       });	   
   	  me.mousemove(function(e){
