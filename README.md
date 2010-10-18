@@ -8,8 +8,8 @@ Simple Tooltip is a tiny plugin for making simple tooltips, when hovering over a
 
 .. along with jQuery (i'm including jQuery from G All Mighty in this example):
 
-  <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-  <script src="path/to/jquery.simple-tooltip.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="path/to/jquery.simple-tooltip.js" type="text/javascript" charset="utf-8"></script>
 
 ### 2. Choose elements
 
