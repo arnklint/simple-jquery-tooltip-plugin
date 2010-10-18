@@ -15,13 +15,13 @@ Simple Tooltip is a tiny plugin for making simple tooltips, when hovering over a
 
 Select elements that you want to display a tooltip when hovering over:
 
-  <script type="text/javascript" charset="utf-8">
-    jQuery(document).ready(function(){
-      $('#my-link, p span').simpleTooltip({
-        title: 'me is a tooltip'
+    <script type="text/javascript" charset="utf-8">
+      jQuery(document).ready(function(){
+        $('#my-link, p span').simpleTooltip({
+          title: 'me is a tooltip'
+        });
       });
-    });
-  </script>
+    </script>
 
 Look at   $.fn.simpleTooltip.defaults in source for more options.
 
@@ -29,18 +29,18 @@ Look at   $.fn.simpleTooltip.defaults in source for more options.
 
 The tooltip gets the "v-tooltip" id so that you can style it however you want with CSS. 
 
-  <style type="text/css" media="screen">
-    #v-tooltip {
-      position:absolute;
-    	background:#000;
-    	padding:3px 5px;
-    	color:#fff;
-    	font-size: 11px;
-    	font-family: Arial, Verdana, sans-serif;
-    	display:none;
-      -moz-border-radius: 3px;
-    	-webkit-border-radius: 3px;	
-    }
-  </style>
+    <style type="text/css" media="screen">
+      #v-tooltip {
+        position:absolute;
+      	background:#000;
+      	padding:3px 5px;
+      	color:#fff;
+      	font-size: 11px;
+      	font-family: Arial, Verdana, sans-serif;
+      	display:none;
+        -moz-border-radius: 3px;
+      	-webkit-border-radius: 3px;	
+      }
+    </style>
 
 ### 4. Done!
