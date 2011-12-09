@@ -1,0 +1,32 @@
+{
+    "name": "simple-tooltip",
+    "version": "1.0.0",
+    "title": "jquery.simpleTooltip()",
+    "author": {
+        "name": "Jonas Arnklint",
+        "url": "http://arnklint.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "LICENSE"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "Most simple jQuery tooltip plugin ever.",
+    "keywords": [
+        "tooltip",
+        "hover",
+        "popup",
+        "bubble"
+    ],
+    "homepage": "https://github.com/arnklint/simple-jquery-tooltip-plugin",
+    "contributors": [
+        
+    ],
+    "files": [
+        "jquery.simple-tooltip.js"
+    ]
+}
