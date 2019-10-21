@@ -13,7 +13,7 @@
         }
     ],
     "dependencies": {
-        "jquery": "1"
+        "jquery": "3"
     },
     "description": "Most simple jQuery tooltip plugin ever.",
     "keywords": [
